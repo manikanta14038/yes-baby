@@ -1,0 +1,654 @@
+{
+	"info": {
+		"_postman_id": "18744dbd-053c-4676-8040-37887d0e64ad",
+		"name": "Local - YesBaby",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "app/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "security_token",
+							"value": "07074158857cf9694e0774d49fbc8e6a",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "developerqweb@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "app_token",
+							"value": "qwedasfansgebbtenu",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/yes_baby/app/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"yes_baby",
+						"app",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app/forgot-password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "security_token",
+							"value": "07074158857cf9694e0774d49fbc8e6a",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "developerqweb@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/yes_baby/app/forgot-password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"yes_baby",
+						"app",
+						"forgot-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app/resend-otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "security_token",
+							"value": "07074158857cf9694e0774d49fbc8e6a",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "developerqweb@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "app_users_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/yes_baby/app/resend-otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"yes_baby",
+						"app",
+						"resend-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app/verify-otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "security_token",
+							"value": "07074158857cf9694e0774d49fbc8e6a",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "developerqweb@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "app_users_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "otp",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/yes_baby/app/verify-otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"yes_baby",
+						"app",
+						"verify-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app/reset-password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "security_token",
+							"value": "07074158857cf9694e0774d49fbc8e6a",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "developerqweb@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "app_users_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "password_confir",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/yes_baby/app/reset-password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"yes_baby",
+						"app",
+						"reset-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "security_token",
+							"value": "07074158857cf9694e0774d49fbc8e6a",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/yes_baby/app/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"yes_baby",
+						"app",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app/register-submit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "security_token",
+							"value": "07074158857cf9694e0774d49fbc8e6a",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "nikhil",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "p",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "developerqweb@gmail.coma",
+							"type": "text"
+						},
+						{
+							"key": "country_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "password_confir",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/apple/Downloads/_old_downloads/45130a9d775c2aefcc124f96f69dbe9a.jpeg"
+						},
+						{
+							"key": "app_token",
+							"value": "123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/yes_baby/app/register-submit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"yes_baby",
+						"app",
+						"register-submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app/register-details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "security_token",
+							"value": "07074158857cf9694e0774d49fbc8e6a",
+							"type": "text"
+						},
+						{
+							"key": "app_users_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/apple/Downloads/_Downlds/meeting management software.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/yes_baby/app/register-details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"yes_baby",
+						"app",
+						"register-details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app/register-details-submit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "security_token",
+							"value": "07074158857cf9694e0774d49fbc8e6a",
+							"type": "text"
+						},
+						{
+							"key": "app_users_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "months_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "weeks_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "day",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "due_date",
+							"value": "2122-01-15",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/yes_baby/app/register-details-submit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"yes_baby",
+						"app",
+						"register-details-submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app/home",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "security_token",
+							"value": "07074158857cf9694e0774d49fbc8e6a",
+							"type": "text"
+						},
+						{
+							"key": "app_users_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/yes_baby/app/home",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"yes_baby",
+						"app",
+						"home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app/topic-details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "security_token",
+							"value": "07074158857cf9694e0774d49fbc8e6a",
+							"type": "text"
+						},
+						{
+							"key": "app_users_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "topic_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/yes_baby/app/topic-details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"yes_baby",
+						"app",
+						"topic-details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app/profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "security_token",
+							"value": "07074158857cf9694e0774d49fbc8e6a",
+							"type": "text"
+						},
+						{
+							"key": "app_users_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/yes_baby/app/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"yes_baby",
+						"app",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app/edit-profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "security_token",
+							"value": "07074158857cf9694e0774d49fbc8e6a",
+							"type": "text"
+						},
+						{
+							"key": "app_users_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": " Qweb",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": " Test",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": " 50629792",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": " developerqweb@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "country_id",
+							"value": " 1",
+							"type": "text"
+						},
+						{
+							"key": "due_date",
+							"value": " 2022-01-15",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password_confir",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/apple/Downloads/d6f0fd63f019e9d3f7acfcc9bb6a46b6.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/yes_baby/app/edit-profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"yes_baby",
+						"app",
+						"edit-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app/notifications",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "security_token",
+							"value": "07074158857cf9694e0774d49fbc8e6a",
+							"type": "text"
+						},
+						{
+							"key": "app_users_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "start",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/yes_baby/app/notifications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"yes_baby",
+						"app",
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
