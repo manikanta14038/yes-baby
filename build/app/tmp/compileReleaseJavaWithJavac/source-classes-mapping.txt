@@ -1,4 +1,0 @@
-io/flutter/plugins/GeneratedPluginRegistrant.java
- io.flutter.plugins.GeneratedPluginRegistrant
-com/qweb/app/yesBaby/BuildConfig.java
- com.qweb.app.yesBaby.BuildConfig
